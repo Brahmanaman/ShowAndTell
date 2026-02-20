@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+body {
+    padding: 15px 0px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .custom-container {
+        max-width: 90%;
+        width: 100%;
+        margin-inline: auto;
+    }
+}
