@@ -8,46 +8,114 @@
 </head>
 
 <body>
-    <div class="custom-container min-h-screen bg-white">
-        <nav class="flex items-center justify-between">
-            <!-- logo -->
-            <div class="h-20 w-30">
-                <a href="#">
-                    <img class="h-full w-full"
-                        src="https://zinnia.com/assets/brand/zinnia-logo-horizontal-full-color.svg" alt="logo">
-                </a>
+    <div class="custom-container min-h-screen bg-[#f8f8f8]">
+        <header class="">
+            <nav class="flex items-center justify-between">
+                <!-- logo -->
+                <div class=" flex lg:flex-1">
+                    <a href="#">
+                        <img class="w-28.75 lg:w-[90] "
+                            src="https://zinnia.com/assets/brand/zinnia-logo-horizontal-full-color.svg" alt="logo">
+                    </a>
 
+                </div>
+                <!-- middle part -->
+                <div class="hidden lg:flex items-center lg:gap-x-3 xl:gap-x-8">
+                    <div class="flex items-center justify-center px-1.5">
+                        <button class="text-sm font-semibold text-gray-900">Company</button>
+                        <i class=" ri-arrow-drop-down-line"></i>
+                    </div>
+                    <div class="flex items-center justify-center px-1.5">
+                        <button class="text-sm font-semibold text-gray-900">Platform</button>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <div class="flex items-center justify-center px-1.5">
+                        <button class="text-sm font-semibold text-gray-900">OutComes</button>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                    <div class="flex items-center justify-center px-1.5">
+                        <button class="text-sm font-semibold text-gray-900">Resources</button>
+                        <i class="ri-arrow-drop-down-line"></i>
+                    </div>
+                </div>
+
+                <!-- hamburg menu -->
+                <div class="lg:hidden">
+                    <i class="ri-menu-line"></i>
+                </div>
+
+                <!-- right part -->
+                <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:gap-x-4">
+                    <button class="bg-[#E66700] text-white font-semibold text-sm rounded-full py-3 px-5 ">Contact
+                        Us</button>
+                    <div>
+                        <span class="text-gray-600 text-sm active hover:text-[#E66700] cursor-pointer">EN </span> <span
+                            class="text-gray-600 text-sm">/</span>
+                        <span class="text-gray-600 text-sm hover:text-[#E66700] cursor-pointer">FR</span>
+                    </div>
+                    <div class="search">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <div class=" relative w-full min-h-[50vh] md:min-h-screen bg-[#f8f8f8]">
+                <!-- <div class="absolute inset-0 overflow-hidden">
+                    <div class="absolute inset-0 z-0"><svg width="1200" height="1200"
+                            class="absolute -top-[550px] -left-[460px] min-[500px]:-top-[700px] min-[500px]:-left-[200px] min-[500px]:scale-150 md:hidden"
+                            viewBox="0 0 1200 1200" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="ringGradientMobile" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFC600"></stop>
+                                    <stop offset="50%" stop-color="#F46C00"></stop>
+                                    <stop offset="100%" stop-color="#FB471F"></stop>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 200 600 C 400 200, 800 200, 1000 600 C 800 1000, 400 1000, 200 600 Z" fill="none"
+                                stroke="url(#ringGradientMobile)" stroke-width="30"></path>
+                        </svg><svg width="4800" height="4800"
+                            class="background-ring-desktop hidden md:block absolute top-[-3300px] left-1/2 -translate-x-1/2 md:ml-[-100px] lg:ml-[-200px] xl:ml-[-150px] 2xl:ml-[-100px]"
+                            viewBox="0 0 4800 4800" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+                            <defs>
+                                <linearGradient id="ringGradientDesktop" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFC600">
+                                        <animate attributeName="stop-color"
+                                            values="#FFC600;#F46C00;#FB471F;#F46C00;#FFC600" dur="6s"
+                                            repeatCount="indefinite"></animate>
+                                    </stop>
+                                    <stop offset="50%" stop-color="#F46C00">
+                                        <animate attributeName="stop-color"
+                                            values="#F46C00;#FB471F;#F46C00;#FFC600;#F46C00" dur="6s"
+                                            repeatCount="indefinite"></animate>
+                                    </stop>
+                                    <stop offset="100%" stop-color="#FB471F">
+                                        <animate attributeName="stop-color"
+                                            values="#FB471F;#F46C00;#FFC600;#F46C00;#FB471F" dur="6s"
+                                            repeatCount="indefinite"></animate>
+                                    </stop>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 800 2400 C 1600 400, 3200 400, 4000 2400 C 3200 4400, 1600 4400, 800 2400 Z"
+                                fill="none" stroke="url(#ringGradientDesktop)" stroke-width="120"></path>
+                        </svg></div>
+                </div> -->
+                <div class="custom-container h-full py-12 relative px-0!">
+                    <div class="flex flex-col md:flex-row justify-between items-center md:items-center gap-12">
+                        <div class="md:w-150 lg:w-225">
+                            <h1
+                                class="font-bold text-[42px] leading-11 bg-linear-to-bl from-[#F46C00] to-[#FB471F] text-transparent bg-clip-text md:text-[38px] lg:text-[50px] xl:text-[52px] lg:leading-13.5 xl:leading-16">
+                                Zinnia simplifies insurance</h1>
+                        </div>
+                        <div class="relative w-3/4 md:w-auto md:h-[80vh]">
+                            <img class="float-animation h-full w-auto object-contain"
+                                src="https://zinnia.com/_next/image?url=%2Fcontent%2Fproducts%2Fhome-hero-2.png&w=750&q=75"
+                                alt="right-hero-img">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- middle part -->
-            <div class="flex items-center gap-[30px]">
-                <div>
-                    <button>Company</button>
-                    <i class=" ri-arrow-drop-down-line"></i>
-                </div>
-                <div>
-                    <button>Platform</button>
-                    <i class="ri-arrow-drop-down-line"></i>
-                </div>
-                <div>
-                    <button>OutComes</button>
-                    <i class="ri-arrow-drop-down-line"></i>
-                </div>
-                <div>
-                    <button>Resources</button>
-                    <i class="ri-arrow-drop-down-line"></i>
-                </div>
-            </div>
-            <!-- right part -->
-            <div class="flex items-center justify-center gap-[20px]">
-                <button>Contact Us</button>
-                <div>
-                    <h5>EN / FR</h5>
-                </div>
-                <div>
-                    <i class="ri-search-line"></i>
-                </div>
-            </div>
-        </nav>
+        </main>
     </div>
 
     <script src="./script.js"></script>
