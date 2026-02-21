@@ -35,6 +35,7 @@ a:hover {
     color: #E66700;
 }
 
+
 i {
     font-size: 25px;
     opacity: 0.5;
@@ -70,6 +71,20 @@ i {
     100% {
         transform: translateY(-3%);
     }
+}
+
+
+.bg-gradient {
+    background: radial-gradient(circle at 30% 25%, #424242cc 0, #0000 50%), radial-gradient(circle at 75% 35%, #1e1e1ecc 0, #0000 55%), radial-gradient(circle at 45% 75%, #424242cc 0, #0000 50%), #1e1e1e;
+    ;
+}
+
+.bg-gradient-orange {
+    background: linear-gradient(45deg, #ffc600, #f46c00, #fb471f, #f46c00, #ffc600) 0 0 / 100% 100%;
+}
+
+.shadow-custom {
+    box-shadow: 0 0 6px 0px rgb(224, 224, 224);
 }
 
 @media screen and (min-width: 1024px) {
